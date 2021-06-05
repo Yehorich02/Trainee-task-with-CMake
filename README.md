@@ -1,0 +1,1 @@
+# Trainee-task-with-CMake
