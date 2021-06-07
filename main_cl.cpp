@@ -1,6 +1,9 @@
 #include "client.hpp"
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
+  (void)argc;
+  (void)argv;
   try {
     Client cl;
     CommandFunc(&cl);

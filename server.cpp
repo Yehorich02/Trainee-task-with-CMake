@@ -1,8 +1,9 @@
 #include "server.hpp"
 
-void CommandFunc(Server &srv) {
+void CommandFunc(Server &srv)
+{
   std::string command;
-  int port = 0;
+  uint16_t port = 0;
   bool port_ = false;
 
   while (true) {
@@ -15,10 +16,10 @@ void CommandFunc(Server &srv) {
     } else if (command == "start" && port_) {
       srv.start();
     } else if (command == "help") {
-      srv.HelpBox();
+      Server::HelpBox();
     } else if (command == "stop") {
       srv.stop();
-      std::cout << "Server stoped on port: " << port << std::endl;
+      std::cout << "Server stopped on port: " << port << std::endl;
     } else if (command == "exit") {
       return;
     } else {
