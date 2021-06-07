@@ -1,6 +1,9 @@
 #include "server.hpp"
 
-int main(int, char *[]) {
+int main(int argc, char *argv[])
+{
+  (void)argc;
+  (void)argv;
   try {
     Server srv;
     CommandFunc(srv);

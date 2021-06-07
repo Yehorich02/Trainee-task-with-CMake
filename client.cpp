@@ -1,6 +1,7 @@
 #include "client.hpp"
 
-void CommandFunc(Client *client) {
+void CommandFunc(Client *client)
+{
   std::string command;
   char value = 0;
   std::string ip;
